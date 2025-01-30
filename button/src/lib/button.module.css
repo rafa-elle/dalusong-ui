@@ -1,0 +1,11 @@
+.button {
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: darkviolet;
+}
