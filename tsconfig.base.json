@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@dalusong-ui/button": ["button/src/index.ts"]
+      "@dalusong-ui/button": ["button/src/index.ts"],
+      "@navbar": ["navbar/src/index.ts"]
     }
   }
 }
