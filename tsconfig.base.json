@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@dalusong-ui/button": ["button/src/index.ts"],
+      "@header": ["header/src/index.ts"],
       "@navbar": ["navbar/src/index.ts"]
     }
   }
