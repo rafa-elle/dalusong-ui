@@ -1,7 +1,35 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+/* hero.module.css */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .heroDescription {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .heroButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .heroButton:hover {
+    background-color: #0056b3;
+  }
