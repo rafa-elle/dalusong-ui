@@ -33,9 +33,9 @@ export default defineConfig({
     },
     lib: {
       // Could also be a dictionary or array of multiple entry points.
-      entry: 'src/index.ts',
+      entry: path.resolve(__dirname, 'src/lib/index.ts'),
       name: 'button',
-      fileName: 'index',
+      fileName: (format) => `dalusong-ui.${format}.js`,
       // Change this to the formats you want to support.
       // Don't forget to update your package.json as well.
       formats: ['es'],
@@ -43,6 +43,12 @@ export default defineConfig({
     rollupOptions: {
       // External packages that should not be bundled into your library.
       external: ['react', 'react-dom', 'react/jsx-runtime'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
     },
   },
 });
