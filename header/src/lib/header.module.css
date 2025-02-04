@@ -1,7 +1,15 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 1rem;
+  }
+  
+  .title {
+    margin: 0;
+  }
