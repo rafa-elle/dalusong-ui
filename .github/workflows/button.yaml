@@ -1,0 +1,38 @@
+name: dalusong-ui
+run-name: dalusong-ui run and test
+
+on:
+    
+    push:
+        branches:
+            - button
+    pull_request:
+        branches:
+            - button
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
+
+        - name: Set up Node.js
+          uses: actions/setup-node@v2
+          with:
+            node-version: '18'
+
+        - name: Install dependencies
+          run: npm install
+
+        - name: Run tests if available
+          run: |
+            if [ -f "package.json" ] && grep -q '"test:' package.json; then
+              npm test
+            else
+              echo "No tests to run"
+            fi
+
+        - name: Build project
+          run: npm run build
