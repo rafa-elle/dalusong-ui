@@ -33,7 +33,7 @@ export default defineConfig({
     },
     lib: {
       // Could also be a dictionary or array of multiple entry points.
-      entry: path.resolve(__dirname, './button/src/index.ts'),
+      entry: path.resolve(__dirname, 'button/src/index.ts'),
       name: 'button',
       fileName: (format) => `dalusong-ui.${format}.js`,
       // Change this to the formats you want to support.
