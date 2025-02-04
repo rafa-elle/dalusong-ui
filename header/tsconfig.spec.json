@@ -5,6 +5,7 @@
     "module": "commonjs",
     "moduleResolution": "node10",
     "jsx": "react-jsx",
+    "composite": true,
     "types": ["jest", "node"]
   },
   "include": [
