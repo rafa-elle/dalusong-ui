@@ -1,6 +1,6 @@
-// Hero.tsx
 import React from 'react';
 import styles from './hero.module.css';
+import { Button } from '@dalusong-ui/button';
 
 const Hero = () => {
   return (
@@ -14,9 +14,9 @@ const Hero = () => {
       </p>
 
       {/* Pulsante */}
-      <button className={styles.heroButton} onClick={() => alert('Button clicked!')}>
+      <Button onClick={() => alert('Button clicked!')}>
         Get Started
-      </button>
+      </Button>
     </section>
   );
 };

@@ -1,13 +1,17 @@
+import React from 'react';
 import styles from './button.module.css';
 
-export function Button() {
-  return (
-    <>
-      <a href="https://www.google.com">
-        <button className={styles.button}>Click me</button>
-      </a>
-    </>
-  );
+export interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
 }
+
+export const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+  return (
+    <button className={styles.button} onClick={onClick}>
+      {children}
+    </button>
+  );
+};
 
 export default Button;
