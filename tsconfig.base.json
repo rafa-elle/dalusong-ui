@@ -3,7 +3,9 @@
     "baseUrl": ".",
     "paths": {
       "@dalusong-ui/button": ["button/src/index.ts"],
-      "@dalusong-ui/hero": ["hero/src/index.ts"]
+      "@dalusong-ui/header": ["header/src/index.ts"],
+      "@dalusong-ui/hero": ["hero/src/index.ts"],
+      "@dalusong-ui/navbar": ["navbar/src/index.ts"]
     }
   }
 }
