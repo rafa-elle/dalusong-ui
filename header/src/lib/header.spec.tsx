@@ -4,7 +4,7 @@ import Header from './header';
 
 describe('Header', () => {
   const mockProps = {
-    title: 'MyWebsite',
+    title: 'Library Example',
     logoUrl: '/path/to/logo.png',
     links: [
       { name: 'Home', href: '/' },
