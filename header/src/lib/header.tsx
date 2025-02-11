@@ -1,25 +1,19 @@
 import React from 'react';
 import styles from './header.module.css';
 
-const Header = () => {
-  // Dati per i link di navigazione
-  const links = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' },
-  ];
+export interface HeaderProps {
+  title: string;
+  logoUrl?: string;
+  links: { name: string; href: string }[];
+}
 
+export const Header: React.FC<HeaderProps> = ({ title, logoUrl, links }) => {
   return (
     <header className={styles.header}>
       {/* Logo e titolo */}
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img
-          src="https://via.placeholder.com/40" // URL di un logo placeholder
-          alt="Logo"
-          className={styles.logo}
-        />
-        <h1 className={styles.title}>MyWebsite</h1>
+        {logoUrl && <img src={logoUrl} alt="Logo" className={styles.logo} />}
+        <h1 className={styles.title}>{title}</h1>
       </div>
 
       {/* Barra di navigazione */}
