@@ -2,7 +2,11 @@ import React from 'react';
 import styles from './hero.module.css';
 import { Button } from '@dalusong-ui/button';
 
-const Hero = () => {
+type HeroProps = {
+  children?: React.ReactNode;
+};
+
+const Hero = ({ children }: HeroProps) => {
   return (
     <section className={styles.hero}>
       {/* Titolo */}
@@ -17,6 +21,7 @@ const Hero = () => {
       <Button onClick={() => alert('Button clicked!')}>
         Get Started
       </Button>
+      {children}
     </section>
   );
 };

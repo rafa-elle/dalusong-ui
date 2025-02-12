@@ -8,5 +8,14 @@
       "import": "./index.mjs",
       "require": "./index.js"
     }
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
